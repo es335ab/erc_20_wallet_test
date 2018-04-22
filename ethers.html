@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="./node_modules/ethers/dist/ethers.js"></script>
+  <!-- <script src="https://cdn.rawgit.com/ethereumjs/browser-builds/2fb69a714afe092b06645286f14b94f41e5c062c/dist/ethereumjs-tx.js"></script> -->
+</head>
+<body>
+
+<!-- kovan addresses -->
+<form id="tokenForm">
+  <div>
+    <label for="contractAddress">
+      <b>Token Contract Address:</b>
+    </label>
+    <input id="contractAddress" type="text" value="0x6e044d852cA0fBDFD08fc0C5BA776B77F2F86d6F" size="60" />
+  </div>
+  <br />
+  <div>
+    <label for="accountAddress">
+      <b>From Address:</b>
+    </label>
+    <input id="fromAddress" type="text" value="" size="60" />
+  </div>
+  <br />
+  <div>
+    <label for="accountAddress">
+      <b>TO Address:</b>
+    </label>
+    <input id="toAddress" type="text" value="" size="60" />
+  </div>
+
+  <div>
+    <label for="privateKey">
+      <b>Private Key:</b>
+    </label>
+    <input id="privateKey" type="text" value="" size="120" />
+  </div>
+  <br />
+  <button id="execTrigger">実行</button>
+</form>
+
+<!-- ropsten addresses -->
+<!-- <form id="tokenForm">
+  <div>
+    <label for="contractAddress">
+      <b>Token Contract Address:</b>
+    </label>
+    <input id="contractAddress" type="text" value="0x798bd49794030a86fa2fc6516ef6c3fcb56705c0" size="60" />
+  </div>
+  <br />
+  <div>
+    <label for="accountAddress">
+      <b>From Address:</b>
+    </label>
+    <input id="fromAddress" type="text" value="" size="60" />
+  </div>
+  <br />
+  <div>
+    <label for="accountAddress">
+      <b>TO Address:</b>
+    </label>
+    <input id="toAddress" type="text" value="" size="60" />
+  </div>
+
+  <div>
+    <label for="privateKey">
+      <b>Private Key:</b>
+    </label>
+    <input id="privateKey" type="text" value="" size="120" />
+  </div>
+  <br />
+</form> -->
+
+<script src="./exec_ethers.js"></script>
+</body>
+</html>
